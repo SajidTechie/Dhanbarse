@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>672453872432-346n5ukrhesjut73fd9ojgfdvrujg3hs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.672453872432-346n5ukrhesjut73fd9ojgfdvrujg3hs</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAap2sZsHTRGzLUJcMf7f69I13O_OQjEWY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>672453872432</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Goldmedal.Dhanbarse</string>
+	<key>PROJECT_ID</key>
+	<string>dhanbarse-d5af4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dhanbarse-d5af4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:672453872432:ios:7aa2c0c2d6ce50578a16f5</string>
+	<key>DATABASE_URL</key>
+	<string>https://dhanbarse-d5af4.firebaseio.com</string>
+</dict>
+</plist>

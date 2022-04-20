@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto.medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto.regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QnASalesExecView" customModule="Dhanbarse" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1B-Fz-fcQ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question and Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T61-mj-zoM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                            <color key="backgroundColor" name="LoginButton"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="f0w-JQ-wNX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Me-vO-Spc">
+                            <rect key="frame" x="10" y="50" width="394" height="678"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ej-sW-uGY">
+                            <rect key="frame" x="10" y="738" width="394" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVP-Tz-N3u" customClass="RoundButton" customModule="Dhanbarse" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="11" width="100" height="40"/>
+                                    <color key="backgroundColor" name="ColorRed"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="AC0-wM-imL"/>
+                                        <constraint firstAttribute="height" constant="40" id="ku2-Sl-L3A"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                    <state key="normal" title="OK">
+                                        <color key="titleColor" name="primaryLight"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ho8-pX-adx" customClass="RoundButton" customModule="Dhanbarse" customModuleProvider="target">
+                                    <rect key="frame" x="274" y="11" width="100" height="40"/>
+                                    <color key="backgroundColor" name="ColorRed"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="H8T-Sy-HHy"/>
+                                        <constraint firstAttribute="width" constant="100" id="ZX1-6s-cZX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                    <state key="normal" title="Deactivate">
+                                        <color key="titleColor" name="primaryLight"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Ho8-pX-adx" secondAttribute="trailing" constant="20" id="08E-hd-247"/>
+                                <constraint firstItem="wVP-Tz-N3u" firstAttribute="centerY" secondItem="8ej-sW-uGY" secondAttribute="centerY" constant="1" id="7ij-pg-zOR"/>
+                                <constraint firstItem="wVP-Tz-N3u" firstAttribute="leading" secondItem="8ej-sW-uGY" secondAttribute="leading" constant="20" id="EAr-pi-8Eh"/>
+                                <constraint firstAttribute="height" constant="60" id="Goe-Gd-J9l"/>
+                                <constraint firstItem="Ho8-pX-adx" firstAttribute="centerY" secondItem="8ej-sW-uGY" secondAttribute="centerY" constant="1" id="eLS-cE-z1w"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="T61-mj-zoM" firstAttribute="top" secondItem="b1B-Fz-fcQ" secondAttribute="top" id="4Fm-Si-k7m"/>
+                        <constraint firstAttribute="trailing" secondItem="8ej-sW-uGY" secondAttribute="trailing" constant="10" id="GRF-gQ-Fua"/>
+                        <constraint firstAttribute="trailing" secondItem="0Me-vO-Spc" secondAttribute="trailing" constant="10" id="Oma-G5-Rsr"/>
+                        <constraint firstItem="T61-mj-zoM" firstAttribute="leading" secondItem="b1B-Fz-fcQ" secondAttribute="leading" id="R7D-yN-UNe"/>
+                        <constraint firstItem="8ej-sW-uGY" firstAttribute="top" secondItem="0Me-vO-Spc" secondAttribute="bottom" constant="10" id="WUw-wK-8Sv"/>
+                        <constraint firstItem="0Me-vO-Spc" firstAttribute="top" secondItem="T61-mj-zoM" secondAttribute="bottom" constant="10" id="jFd-O1-TFh"/>
+                        <constraint firstItem="8ej-sW-uGY" firstAttribute="leading" secondItem="b1B-Fz-fcQ" secondAttribute="leading" constant="10" id="lMd-wr-EJj"/>
+                        <constraint firstItem="0Me-vO-Spc" firstAttribute="leading" secondItem="b1B-Fz-fcQ" secondAttribute="leading" constant="10" id="m8G-mY-kmO"/>
+                        <constraint firstAttribute="trailing" secondItem="T61-mj-zoM" secondAttribute="trailing" id="qbe-u0-N5r"/>
+                        <constraint firstAttribute="bottom" secondItem="8ej-sW-uGY" secondAttribute="bottom" constant="20" id="ufX-6n-Zd5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b1B-Fz-fcQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5yU-7T-1hp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="b1B-Fz-fcQ" secondAttribute="bottom" id="gUF-YN-msI"/>
+                <constraint firstItem="b1B-Fz-fcQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xZW-sn-7Wn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b1B-Fz-fcQ" secondAttribute="trailing" id="yPG-68-GEn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ColorRed">
+            <color red="0.90700000524520874" green="0.21799999475479126" blue="0.21899999678134918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LoginButton">
+            <color red="0.39899998903274536" green="0.40000000596046448" blue="0.39899998903274536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryLight">
+            <color red="0.91399997472763062" green="0.9179999828338623" blue="0.92100000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+//
+//  OtpController.swift
+//  HrApp
+//
+//  Created by Goldmedal on 7/18/19.
+//  Copyright © 2019 Goldmedal. All rights reserved.
+//
+
+import UIKit
+
+class OtpController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func onClick(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Auth", bundle: nil)
+        let vcReset = storyBoard.instantiateViewController(withIdentifier: "ResetPasswordController") as! ResetPasswordController
+        self.navigationController!.pushViewController(vcReset, animated: true)
+    }
+
+}
